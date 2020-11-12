@@ -23,13 +23,13 @@ def mensagem (con):
     else:
         return "REPROVADO"
 
-# variaves de entrada
+# variáveis de entrada
 aluno = int(input('Digite a matrícula do aluno: '))
 nota1 = int(input('Digite a primeira nota: '))
 nota2 = int(input('Digite a segunda nota: '))
 nota3 = int(input('Digite a terceira nota: '))
 
-# variaveis chamando funções para facilitar na manipulação das menssagens
+# variáveis chamando funções para facilitar na manipulação das menssagens
 ma = media_aproveitamento(nota1, nota2, nota3)
 con = conceito(ma)
 msg = mensagem(con)
@@ -41,6 +41,6 @@ print(nota1)
 print(nota2)
 print(nota3)
 print('Média: ', media(nota1, nota2, nota3))
-print('Média de Aproveiamento: ',ma)
+print('Média de Aproveitamento: ',ma)
 print('Conceito: ',con)
 print("Aluno ",msg)
